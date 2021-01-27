@@ -1,0 +1,62 @@
+<!-- Translates to Form Processing for BMI -->
+
+
+<!-- Using the simple-app-html.js file  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <div id="bmi-form">
+            <h1>BMI Calculator</h1>
+            <div class="mt-3">
+                <label class="form-label">Choose your Unit of Measurement</label>
+                <div class="form-check"> 
+                    <!-- name is to group the radio for single selection only -->
+                    <input type="radio" value="imperial" name="units" class="form-check-input units"/>
+                    <label class="form-check-units"/>Imperial</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" value="metrics" name="units" class="form-check-input units"/>
+                    <label class="form-check-units"/>Metrics</label>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <label class="form-label">Enter your Weight & Height</label> 
+                <div>
+                    <label class="form-label">Weight <span id="weight-helper-text"></label>
+                    <input type="text" id="weight" placeholder="Your weight" class="form-control"/>
+                </div>
+                <div>
+                    <label class="form-label">Height</label>
+                    <input type="text" id="height" placeholder="Your height" class="form-control"/>
+                </div>
+            </div>
+            </div>
+
+            
+            <button id="calcBMI-btn" class="btn btn-primary mt-3">Calculate BMI</button>
+        
+        
+        
+        
+        
+        
+        </div>
+       
+        <div id="results">
+
+            <div id="results-text"></div>
+        </div>
+
+
+    <script src="simple-app-html.js"></script>
+</body>
+</html>
